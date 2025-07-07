@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Dad</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.25);
+      padding: 40px 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .cake {
+      font-size: 4rem;
+      margin-bottom: 25px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: #fff;
+      margin: 20px 0;
+      line-height: 1.8;
+    }
+
+    /* Glow animation */
+    @keyframes gentleGlow {
+      0% {
+        box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+      }
+      50% {
+        box-shadow: 0 0 16px rgba(255, 255, 255, 0.9);
+      }
+      100% {
+        box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    /* Bounce animation */
+    @keyframes subtleBounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    .dad-photo {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid white;
+      margin: 0 auto 20px;
+      display: block;
+      animation:gentleGlow 3s ease-in-out infinite;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 14px 28px;
+      background-color: #fff;
+      color: #6c5ce7;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #f3e8ff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2.3rem;
+      }
+
+      .cake {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cake">🎂</div>
+    <!-- Use a relative image path -->
+    <img src="naanna photo.jpg" alt="Dad's Photo" class="dad-photo" />
+    <h1>Happy Birthday, Naanna! 🎉❤️</h1>
+
+    <p>
+      Today is all about celebrating you — the man who gives his all for us every single day.
+      Your strength, dedication, and unconditional love are the foundation of our happiness.
+    </p>
+
+    <p>
+      You’re not just the best dad — you’re the most handsome, most hardworking, and most caring man I know. The way you carry yourself with calm and dignity inspires me every day.
+    </p>
+
+    <p>
+      Your efforts may often go unnoticed, but we see it all — the sacrifices, the late nights, the worries behind your smile, and the hugs filled with reassurance. Thank you for being our everything.
+    </p>
+
+    <p>
+      On your special day, I hope you're surrounded by joy, peace, and the warmth of all our love. You deserve the world, and we are blessed to have you as ours.
+    </p>
+
+    <button class="btn" onclick="alert('Big warm hug to the best dad in the world!❤️')">Send a Hug 🤗</button>
+  </div>
+</body>
+</html>
